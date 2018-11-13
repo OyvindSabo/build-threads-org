@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+    <h1><i class="fa fa-list text-muted"></i> Configured Routes</h1>
+
+    <table class="table-striped table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>Path</th>
+                <th>Endpoint</th>
+            </tr>
+        </thead>
+        <tbody>
+    {% for route in routes %}
+            <tr>
+                <td>{{ route.rule }}</td>
+                <td>{{ route.endpoint }}</td>
+            </tr>
+    {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
+
