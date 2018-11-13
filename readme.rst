@@ -1,14 +1,10 @@
 
 
-Flask_Starter_App
+BuildThreads.org
 ============================
 
-This project is meant to be a modern and "professional" project skeleton to
-start from,
-with "batteries included"
-rather than the barebones toys found online so far.
-The functionality of Django with the breeziness of Flask.
-(Please don't call it "Flango," haha.)
+Forum website for car builders.
+
 It includes:
 
 - Python 3.5+ support
@@ -99,12 +95,6 @@ It includes:
 
   - ``start.sh`` - rudimentary script to load gunicorn3 and caddy in
     container.
-
-
-.. note::
-
-    Am learning Flask as I go along,
-    so improvements and pointers to best practices welcome.
 
 
 Introduction
