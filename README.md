@@ -7,10 +7,14 @@ $env:FLASK_APP = "home.py"
 flask run
 ```
 
-### Start the server in debug mode
+### Turn on debug mode
 ```
 $env:FLASK_DEBUG = 1
-$ flask run
+```
+
+### Turn off debug mode
+```
+$env:FLASK_DEBUG = 0
 ```
 
 ### Make server publicly available
