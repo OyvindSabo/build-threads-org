@@ -1,9 +1,10 @@
 from flask import Flask
+from views.home.home import renderHome
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '<h1>Hello, World</h1>'
+    return renderHome('there')
 
 # User profile
 @app.route('/user/<username>')
