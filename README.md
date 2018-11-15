@@ -3,7 +3,7 @@
 ### Start the server
 
 ```
-$env:FLASK_APP = "home.py"
+$env:FLASK_APP = "app.py"
 flask run
 ```
 
