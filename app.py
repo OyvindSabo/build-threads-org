@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return renderHome('there')
+    return renderHome()
 
 # User profile
 @app.route('/user/<username>')

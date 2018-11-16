@@ -1,12 +1,20 @@
-def getStyles():
+def styles():
   return """
     <style>
-      .blockPostContainer {
-        box-shadow: 0px 0px 50px;
-        max-width:100vmin;
-        padding: 5px;
-        margin:5px;
+      body {
+        background-color: #eeeeee;
+        margin: 0px;
+      }
+      .container {
         width:100%;
+        max-width:100vmin;
+      }
+      .blockPostContainer {
+        background-color: #ffffff;
+        text-align: left;
+        max-width:100%;
+        padding: 10px;
+        margin:10px 0px;
       }
       .blockPostImage {
         width: 100%;
@@ -14,12 +22,12 @@ def getStyles():
       .postTitle {
         font-family: Arial Black;
         text-decoration: none;
-        color: #2F3D45;
+        color: #444444;
       }
       .userName {
         font-family: Arial Black;
         text-decoration: none;
-        color: #2F3D45;
+        color: #3179CD;
       }
     </style>
   """
