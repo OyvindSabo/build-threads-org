@@ -4,7 +4,7 @@ from src.views.login.login import renderLogin
 app = Flask(__name__)
 
 # Global variable to store database in memory
-Objects = []
+app.Objects = []
 
 @app.route('/')
 def home():
