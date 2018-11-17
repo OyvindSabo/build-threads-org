@@ -17,7 +17,7 @@ $env:FLASK_DEBUG = 1
 $env:FLASK_DEBUG = 0
 ```
 
-### Make server publicly available
+### Start server publicly
 ```
 flask run --host=0.0.0.0
 ```
