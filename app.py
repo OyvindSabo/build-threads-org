@@ -1,6 +1,6 @@
 from flask import Flask
-from views.home.home import renderHome
-from views.login.login import renderLogin
+from src.views.home.home import renderHome
+from src.views.login.login import renderLogin
 app = Flask(__name__)
 
 @app.route('/')
