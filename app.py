@@ -3,6 +3,9 @@ from src.views.home.home import renderHome
 from src.views.login.login import renderLogin
 app = Flask(__name__)
 
+# Global variable to store database in memory
+Objects = []
+
 @app.route('/')
 def home():
     return renderHome()
