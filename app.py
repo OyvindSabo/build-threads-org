@@ -1,10 +1,16 @@
 from flask import Flask
 from views.home.home import renderHome
+from views.login.login import renderLogin
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     return renderHome()
+
+# Login
+@app.route('/login')
+def showLogin():
+  return renderLogin()
 
 # User profile
 @app.route('/user/<username>')

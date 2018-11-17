@@ -1,6 +1,6 @@
 from ..libs.frontLib.blockPost import blockPost
-from ..libs.frontLib.styles import styles
 from ..libs.frontLib.container import container
+from ..libs.frontLib.styles import styles
 
 def renderHome():
   post = {
