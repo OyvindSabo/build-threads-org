@@ -3,19 +3,18 @@ from ..libs.frontLib.container import container
 from ..libs.frontLib.styles import styles
 
 def renderHome():
-  post = {
-    'author': {
-      'name': 'Øyvind',
-      'profileLink': '/user/oyvindsabo'
-    },
-    'imageUrl': 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmXCfWZrZhW8oFqsFtWLLhHRCirP33TJugg2rVsGpWtm75/Steemit%20IMG_4572.jpg',
-    'postUrl': '/forums/cars/oyvindsabo/',
-    'title': 'This is a test post'
-  }
-  
-  return f"""
+  return """
+    <script>
+      const url = 'localhost:5000';
+
+      window.onload = () => fetch(`http://${url}/api/threads/blockposts`).then(response => {
+        let threads = response.json();
+        threads.then(threads => {
+          console.log('threads: ', threads);
+          document.getElementById('container').innerHTML = threads.join('');
+        });
+      });
+    </script>""" + f"""
     {styles()}
-    {container(
-      f'{blockPost(post)}{blockPost(post)}'
-    )}
+    {container()}
   """

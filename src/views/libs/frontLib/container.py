@@ -1,7 +1,7 @@
-def container(content):
+def container(content=''):
   return f"""
     <center>
-      <div class='container'>
+      <div id='container' class='container'>
         {content}
       </div>
     </center>
