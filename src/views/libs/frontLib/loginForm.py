@@ -6,7 +6,7 @@ def loginForm():
         <br>
         <input type='password' name='privateKey' placeholder='Password' class='formInput'>
         <br>
-        <input type='submit' value='Submit' class='submitButton'>
+        <input type='submit' value='Login' class='submitButton'>
       </form>
     </div>
   """
