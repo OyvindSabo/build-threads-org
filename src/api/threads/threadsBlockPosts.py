@@ -21,4 +21,4 @@ def apiThreadsBlockPosts():
       'title': 'This is a test post'
     }
   ]
-  return list(map(lambda x: blockPost(x), posts))
+  return list(map(lambda post: blockPost(post), posts))
