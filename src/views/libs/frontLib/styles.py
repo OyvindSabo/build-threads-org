@@ -38,6 +38,11 @@ def styles():
         margin: 10px;
         border:none;
       }
+      .postTitle {
+        font-family: Arial Black;
+        text-decoration: none;
+        color: #444444;
+      }
       .submitButton {
         background-color: DodgerBlue;
         font-family: Arial Black;
@@ -54,15 +59,34 @@ def styles():
         background-color: LightSkyBlue;
         transition: 0.1s;
       }
-      .postTitle {
-        font-family: Arial Black;
-        text-decoration: none;
-        color: #444444;
-      }
       .userName {
         font-family: Arial Black;
         text-decoration: none;
         color: DodgerBlue;
+      }
+      .topNavigator {
+        background-color: #ffffff;
+        font-family: Arial Black;
+        overflow: hidden;
+      }
+      .topNavigator a {
+        text-decoration: none;
+        padding: 14px 16px;
+        text-align: center;
+        font-size: 17px;
+        color: #444444;
+        float: left;
+      }
+      .topNavigator a:hover {
+        background-color: #eee;
+        color: black;
+      }
+      .topNavigator a.activeButton {
+        background-color: DodgerBlue;
+        color: white;
+      }
+      .topNavigatorRight {
+        float: right;
       }
     </style>
   """

@@ -1,6 +1,7 @@
-from ..libs.frontLib.blockPost import blockPost
-from ..libs.frontLib.container import container
-from ..libs.frontLib.styles import styles
+from ..libs.frontLib.blockPost    import blockPost
+from ..libs.frontLib.container    import container
+from ..libs.frontLib.styles       import styles
+from ..libs.frontLib.topNavigator import topNavigator
 
 def renderHome():
   return """
@@ -16,5 +17,6 @@ def renderHome():
       });
     </script>""" + f"""
     {styles()}
+    {topNavigator()}
     {container()}
   """
