@@ -6,8 +6,9 @@ def styles():
         margin: 0px;
       }
       .container {
-        width:100%;
         max-width:100vmin;
+        margin-top: 60px;
+        width:100%;
       }
       .blockPostContainer {
         background-color: #ffffff;
@@ -68,6 +69,9 @@ def styles():
         background-color: #ffffff;
         font-family: Arial Black;
         overflow: hidden;
+        position: fixed;
+        width: 100%;
+        top: 0;
       }
       .topNavigator a {
         text-decoration: none;
